@@ -12,34 +12,61 @@
       <em>As a user, I should be able to register for an account</em>
       <p>
       To register an account, Alice first visits the home page and clicks the
-       "register account" link. This bring her to the new account form, where she
-       enters her email address, username, and password. After submitting the
-       form, she waits for an email to confirm her email address. Upon clicking
-       the link in the email, her new account is ready to use.
+      "register account" link. This bring her to the new account form, where she
+      enters her email address, username, and password. After submitting the
+      form, she waits for an email to confirm her email address. Upon clicking
+      the link in the email, her new account is ready to use.
       </p>
 
       <!-- Story 2 -->
       <em>As a user, I should be able to create a message</em>
-      <p>TODO</p>
+      <p>
+      When logged in, Alice visits the home page and starts typing into the
+      text field with the placeholder "Write your message". When she finishes
+      the message, she clicks "Post message". The post is now visible on her
+      home page.
+      </p>
 
       <!-- Story 3 -->
       <em>As a user, I should be able to follow a user</em>
-      <p>TODO</p>
+      <p>
+      When logged in, Alice searches for a user "bob". On the list of results,
+      she sees the of the user the name of the user with the username "bob".
+      She clicks the "follow" button next to bob's name, and sees a message that
+      she is now following bob.
+      </p>
 
       <!-- Story 4 -->
       <em>As a user following other users, their messages should show up on my feed</em>
-      <p>TODO</p>
+      <p>
+      Alice is following the user "bob". When Alice is on her homepage, she
+      should see the most recent messages posted by "bob".
+      </p>
 
       <!-- Story 5 -->
       <em>As an unregistered user, I should be able read messages by users</em>
-      <p>TODO</p>
+      <p>
+      As a user without an account, I search for the username "bob". I see a
+      list of users with a username similar to "bob". When I click on the name
+      of the first user on the list, I should see the messages that user has
+      posted.
+      </p>
+
+      <!-- Story 6 -->
+      <em>As an unregistered user, I should not be able to create a post</em>
+      <p>
+      As a user without an account, I navigate to the homepage. The textbox
+      where registered users can write messages is disabled, and displays a
+      message telling me that I must register for an account to post messages.
+      </p>
 
       <h1>Data-First Design</h2>
 
       <em>User</em>
       <ul>
         <li>Email</li>
-        <li>Name</li>
+        <li>Human Name</li>
+        <li>Username</li>
         <li>Avatar</li>
         <li>Some form of authentication (hashed password, oauth, etc.)</li>
       </ul>
