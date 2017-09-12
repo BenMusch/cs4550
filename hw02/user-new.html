@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta content="text/html; charset=utf-8">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body class="user-new">
+    <div class="container col-md-6 col-md-offset-3">
+      <div class="page-header">
+        <h1>Welcome to Microblog!</h1>
+        <span>Fill out the form below to create an account.</span>
+      </div>
+
+      <div class="row">
+        <form action="/users" method="POST">
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" class="form-control" placeholder="Email">
+          </div>
+
+          <div class="form-group">
+            <label for="human_name">Full Name</label>
+            <input type="text" name="human_name" class="form-control" placeholder="Your full name (e.g. Jane Doe)">
+          </div>
+
+          <div class="form-group">
+            <label for="username">Username</label>
+            <div class="input-group">
+              <span class="input-group-addon">@</span>
+              <input type="text" name="username" class="form-control" placeholder="Username">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="password_confirmation">Confirm Password</label>
+            <input type="password" name="password_confirmation" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="avatar">Upload an Avatar (optional)</label>
+            <input type="file" name="avatar" class="btn">
+          </div>
+
+          <input type="submit" value="Create my account!" class="btn btn-primary btn-action">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
