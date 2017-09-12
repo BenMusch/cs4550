@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta content="text/html; charset=utf-8">
+    <title>HW02 Designs | Ben Muschol</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>User-First Design</h1>
+
+      <!-- Story 1 -->
+      <em>As a user, I should be able to register for an account</em>
+      <p>
+      To register an account, Alice first visits the home page and clicks the
+       "register account" link. This bring her to the new account form, where she
+       enters her email address, username, and password. After submitting the
+       form, she waits for an email to confirm her email address. Upon clicking
+       the link in the email, her new account is ready to use.
+      </p>
+
+      <!-- Story 2 -->
+      <em>As a user, I should be able to create a message</em>
+      <p>TODO</p>
+
+      <!-- Story 3 -->
+      <em>As a user, I should be able to follow a user</em>
+      <p>TODO</p>
+
+      <!-- Story 4 -->
+      <em>As a user following other users, their messages should show up on my feed</em>
+      <p>TODO</p>
+
+      <!-- Story 5 -->
+      <em>As an unregistered user, I should be able read messages by users</em>
+      <p>TODO</p>
+
+      <h1>Data-First Design</h2>
+
+      <em>User</em>
+      <ul>
+        <li>Email</li>
+        <li>Name</li>
+        <li>Avatar</li>
+        <li>Some form of authentication (hashed password, oauth, etc.)</li>
+      </ul>
+
+      <em>Follow</em>
+      <ul>
+        <li>Reference to the followed user</li>
+        <li>Reference to the following user</li>
+      </ul>
+
+      <em>Message</em>
+      <ul>
+        <li>Reference to the author user</li>
+        <li>Content</li>
+      </ul>
+
+    </div>
+  </body>
+</html>
