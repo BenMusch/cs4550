@@ -1,0 +1,103 @@
+.sidebar {
+  padding: 2.5em 0 0 2.5em;
+}
+
+/*********************
+ * Large avatar styles
+ *********************
+ */
+.avatar-container {
+  width: 10em;
+  height: 10em;
+  padding: 1em;
+}
+
+.avatar-container img {
+  width: 8em;
+  height: 8em;
+}
+
+/*********************
+ * Small avatar styles
+ *********************
+ */
+
+.avatar-conatiner-sm {
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+}
+
+.avatar-container-sm img {
+  width: 4.5em;
+  height: 4.5em;
+}
+
+/*****************************
+ * User data styles -- generic
+ *****************************
+ */
+
+.user-data {
+  list-style: none;
+  float: left;
+}
+
+.user-data li {
+  display: block;
+  float: left;
+}
+
+/***************************
+ * User data styles -- large
+ ***************************
+ */
+
+.user-data-lg {
+  padding: 0.3em;
+}
+
+.user-data-lg li {
+  margin-right: 1em;
+}
+
+/*********************
+ * General list styles
+ *********************
+ */
+
+.item {
+  margin-bottom: 1em;
+  border-bottom: 0.1em solid #eee;
+}
+
+.item .name strong {
+  color: #333;
+}
+
+.item .name {
+  color: #777;
+}
+
+/*****************
+ * Messages styles
+ *****************
+ */
+
+.message .content {
+  padding-left: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.message .content p {
+  font-size: 1.3em;
+}
+
+/******************
+ * User list styles
+ ******************
+ */
+
+.user .name {
+  font-size: 1.2em;
+}

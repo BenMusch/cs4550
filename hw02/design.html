@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>HW02 Designs | Ben Muschol</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>User-First Design</h1>
+
+      <!-- Story 1 -->
+      <em>As a user, I should be able to register for an account</em>
+      <p>
+      To register an account, Alice first visits the home page and clicks the
+      "register account" link. This bring her to the new account form, where she
+      enters her email address, username, and password. After submitting the
+      form, she waits for an email to confirm her email address. Upon clicking
+      the link in the email, her new account is ready to use.
+      </p>
+
+      <!-- Story 2 -->
+      <em>As a user, I should be able to create a message</em>
+      <p>
+      When logged in, Alice visits the home page and starts typing into the
+      text field with the placeholder "Write your message". When she finishes
+      the message, she clicks "Post message". The post is now visible on her
+      home page.
+      </p>
+
+      <!-- Story 3 -->
+      <em>As a user, I should be able to follow a user</em>
+      <p>
+      When logged in, Alice searches for a user "bob". On the list of results,
+      she sees the of the user the name of the user with the username "bob".
+      She clicks the "follow" button next to bob's name, and sees a message that
+      she is now following bob.
+      </p>
+
+      <!-- Story 4 -->
+      <em>As a user following other users, their messages should show up on my feed</em>
+      <p>
+      Alice is following the user "bob". When Alice is on her homepage, she
+      should see the most recent messages posted by "bob".
+      </p>
+
+      <!-- Story 5 -->
+      <em>As an unregistered user, I should be able read messages by users</em>
+      <p>
+      As a user without an account, I search for the username "bob". I see a
+      list of users with a username similar to "bob". When I click on the name
+      of the first user on the list, I should see the messages that user has
+      posted.
+      </p>
+
+      <!-- Story 6 -->
+      <em>As an unregistered user, I should not be able to create a post</em>
+      <p>
+      As a user without an account, I navigate to the homepage. The textbox
+      where registered users can write messages is disabled, and displays a
+      message telling me that I must register for an account to post messages.
+      </p>
+
+      <h1>Data-First Design</h1>
+
+      <strong>User</strong>
+      <ul>
+        <li>Email</li>
+        <li>Human Name</li>
+        <li>Username</li>
+        <li>Avatar</li>
+        <li>Some form of authentication (hashed password, oauth, etc.)</li>
+      </ul>
+
+      <table>
+        <tr>
+          <th>Route</th>
+          <th>Data</th>
+        </tr>
+
+        <tr>
+          <td>New</td>
+          <td>
+            A form with email, username, human name, and password fields + an
+            avatar upload form
+          </td>
+        </tr>
+
+        <tr>
+          <td>Create</td>
+          <td>
+            A page showing the user's name and avatar + a message saying "Your
+            account has been created, please check your email for so we can
+            verify your account"
+          </td>
+        </tr>
+
+        <tr>
+          <td>Retrieve</td>
+          <td>
+            Displays the user's name and avatar, as well as a list of their
+            messages
+          </td>
+        </tr>
+
+        <tr>
+          <td>Update</td>
+          <td>
+            A form like the new user form, but pre-populated with the data for
+            that user. In order to update their password, the user should have
+            to type in their old password.
+          </td>
+        </tr>
+
+        <tr>
+          <td>Delete</td>
+          <td>
+            A delete button that forces the user to confirm that they really
+            want to perform this action
+          </td>
+        </tr>
+
+        <tr>
+          <td>Index</td>
+          <td>
+            A list of users with their human name, username and avatar. The
+            names would link to their retrieve page
+          </td>
+        </tr>
+      </table>
+      <br>
+
+      <strong>Follow</strong>
+      <ul>
+        <li>Reference to the followed user</li>
+        <li>Reference to the following user</li>
+      </ul>
+
+      <table>
+        <tr>
+          <th>Route</th>
+          <th>Data</th>
+        </tr>
+
+        <tr>
+          <td>New</td>
+          <td>A "follow" button next to a user's name</td>
+        </tr>
+
+        <tr>
+          <td>Create</td>
+          <td>
+            A page showing the followed user, with a "You have are now
+            following ___" message
+          </td>
+        </tr>
+
+        <tr>
+          <td>Retrieve</td>
+          <td>N/A. There's no reason to view a single "follow"</td>
+        </tr>
+
+        <tr>
+          <td>Update</td>
+          <td>
+            N/A. Follow can't be updated, they can only be created or deleted.
+          </td>
+        </tr>
+
+        <tr>
+          <td>Delete</td>
+          <td>An "unfollow" button next to a user's name</td>
+        </tr>
+
+        <tr>
+          <td>Index</td>
+          <td>A list of the "followed" user in the Follow.</td>
+        </tr>
+      </table>
+      <br>
+
+      <strong>Message</strong>
+      <ul>
+        <li>Reference to the author user</li>
+        <li>Content</li>
+        <li>Created timestamp</li>
+        <li>Last update timestamp</li>
+      </ul>
+
+      <table>
+        <tr>
+          <th>Route</th>
+          <th>Data</th>
+        </tr>
+
+        <tr>
+          <td>New</td>
+          <td>A text field where the message can be written</td>
+        </tr>
+
+        <tr>
+          <td>Create</td>
+          <td>
+            A page showing the created message + a "your post has been created"
+            alert
+          </td>
+        </tr>
+
+        <tr>
+          <td>Retrieve</td>
+          <td>
+            Displays the text of a single message, along with its timestamps
+            and the avatar + name of the author.
+          </td>
+        </tr>
+
+        <tr>
+          <td>Update</td>
+          <td>
+            A text field pre-populated with the content of the message.
+          </td>
+        </tr>
+
+        <tr>
+          <td>Delete</td>
+          <td>A "delete" button that forces the user to confirm the deletion.</td>
+        </tr>
+
+        <tr>
+          <td>Index</td>
+          <td>A list of muliple messages' content and their authors.</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
