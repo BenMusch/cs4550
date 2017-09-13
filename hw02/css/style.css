@@ -23,3 +23,18 @@
   float: right;
   margin-right: 1em;
 }
+
+.avatar-conatiner-sm {
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+}
+
+.avatar-container-sm img {
+  width: 4.5em;
+  height: 4.5em;
+}
+
+.message .content p {
+  font-size: 1.3em;
+}
