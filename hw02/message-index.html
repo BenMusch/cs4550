@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta content="text/html; charset=utf-8">
+    <title>HW02 Designs | Ben Muschol</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body class="message-index">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Microblog</a>
+        </div>
+
+        <!-- Nav links -->
+        <ul class="nav navbar-nav">
+          <li><a href="/messages">Messages</a></li>
+          <li><a href="/messages/new">New Message</a></li>
+          <li><a href="/users">Users</a></li>
+        </ul>
+
+        <!-- Account links -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/messages/new">My Profile</a></li>
+          <li><a href="/users">Sign Out</a></li>
+        </ul>
+
+        <!-- Search -->
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search for a user...">
+          </div>
+          <button type="submit" class="btn btn-default">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+      <div class="row">
+
+      <div class="row message item">
+        <div class="col-md-1">
+          <div class="avatar-container-sm panel">
+            <img src="https://help.github.com/assets/images/help/profile/identicon.png"/>
+          </div>
+        </div>
+        <div class="col-md-11 content">
+          <p>This is a test message that's pretty short</p>
+          <span class="metadata">
+            <a href="/users/jane_doe" class="name">
+              <strong>Jane Doe</strong>
+              @jane_doe
+            </a>
+            <small><a href="/messages/1">3 days ago</a></small>
+          </span>
+        </div>
+      </div> <!-- End message -->
+
+      <div class="row message item">
+        <div class="col-md-1">
+          <div class="avatar-container-sm panel">
+            <img src="https://help.github.com/assets/images/help/profile/identicon.png"/>
+          </div>
+        </div>
+        <div class="col-md-11 content">
+          <p>This is a test message that's pretty long. Since there's no
+          character limit, it's important to make sure that there are not
+          any weird side-effects from abnormally long messages.</p>
+          <span class="metadata">
+            <a href="/users/jane_doe" class="name">
+              <strong>Jane Doe</strong>
+              @jane_doe
+            </a>
+            <small><a href="/messages/1">3 days ago</a></small>
+          </span>
+        </div>
+      </div> <!-- End message -->
+
+      <div class="row message item">
+        <div class="col-md-1">
+          <div class="avatar-container-sm panel">
+            <img src="https://help.github.com/assets/images/help/profile/identicon.png"/>
+          </div>
+        </div>
+        <div class="col-md-11 content">
+          <p>An example of a message that has a
+          <a href="/tags/hashtag">#hashtag</a> and mentions my friend
+          <a href="/users/bob">@bob</a>!</p>
+          <span class="metadata">
+            <a href="/users/jane_doe" class="name">
+              <strong>Jane Doe</strong>
+              @jane_doe
+            </a>
+            <small><a href="/messages/1">3 days ago</a></small>
+          </span>
+        </div>
+      </div> <!-- End message -->
+
+      <div class="row message item">
+        <div class="col-md-1">
+          <div class="avatar-container-sm panel">
+            <img src="https://help.github.com/assets/images/help/profile/identicon.png"/>
+          </div>
+        </div>
+        <div class="col-md-11 content">
+          <p>Another message that I need to type but dont feel like coming
+          up with anything for</p>
+          <span class="metadata">
+            <a href="/users/jane_doe" class="name">
+              <strong>Jane Doe</strong>
+              @jane_doe
+            </a>
+            <small><a href="/messages/1">3 days ago</a></small>
+          </span>
+        </div>
+      </div> <!-- End message -->
+    </div><!-- End messages -->
+  </body>
+</html>
