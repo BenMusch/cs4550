@@ -1,0 +1,25 @@
+.user-show .avatar-container {
+  width: 12em;
+  height: 12em;
+  padding: 1em;
+}
+
+.user-show .avatar-container img {
+  width: 10em;
+  height: 10em;
+}
+
+.user-data {
+  padding-top: 3em;
+}
+
+.user-data ul {
+  list-style: none;
+  float: right;
+}
+
+.user-data li {
+  display: block;
+  float: right;
+  margin-right: 1em;
+}
