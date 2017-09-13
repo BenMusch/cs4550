@@ -1,26 +1,26 @@
+.user-show .sidebar {
+  padding: 2.5em 0 0 2.5em;
+}
 .user-show .avatar-container {
-  width: 12em;
-  height: 12em;
+  width: 10em;
+  height: 10em;
   padding: 1em;
 }
 
 .user-show .avatar-container img {
-  width: 10em;
-  height: 10em;
+  width: 8em;
+  height: 8em;
 }
 
 .user-data {
-  padding-top: 3em;
-}
-
-.user-data ul {
   list-style: none;
-  float: right;
+  float: left;
+  padding: 0.3em;
 }
 
 .user-data li {
   display: block;
-  float: right;
+  float: left;
   margin-right: 1em;
 }
 
@@ -35,6 +35,24 @@
   height: 4.5em;
 }
 
+.message .content {
+  padding-left: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.message {
+  margin-bottom: 1em;
+  border-bottom: 0.1em solid #eee;
+}
+
 .message .content p {
   font-size: 1.3em;
+}
+
+.message .name strong {
+  color: #333;
+}
+
+.message .name {
+  color: #777;
 }
