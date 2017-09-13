@@ -40,8 +40,24 @@
 
     <!-- Main content -->
     <div class="container">
-      <div class="row">
 
+      <!-- New message form -->
+      <div class="row">
+        <div class="col-md-12">
+          <form action="/messages" method="POST">
+            <textarea name="content" class="form-control"
+              rows="2" placeholder="Write a new message..."></textarea>
+
+            <br>
+            <input type="submit" value="Post my message!" class="btn btn-primary btn-action">
+          </form>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <!-- list of messages -->
       <div class="row message item">
         <div class="col-md-1">
           <div class="avatar-container-sm panel">
