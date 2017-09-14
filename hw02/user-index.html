@@ -3,173 +3,171 @@
   <head>
     <meta charset="utf-8">
     <title>HW02 Designs | Ben Muschol</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body class="user-index">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">Microblog</a>
-        </div>
+        <a class="navbar-brand" href="/">Microblog</a>
 
         <!-- Nav links -->
-        <ul class="nav navbar-nav">
-          <li><a href="/messages">Messages</a></li>
-          <li><a href="/messages/new">New Message</a></li>
-          <li><a href="/users">Users</a></li>
-        </ul>
-
-        <!-- Account links -->
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/messages/new">My Profile</a></li>
-          <li><a href="/users">Sign Out</a></li>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="/messages" class="nav-link">Messages</a></li>
+          <li class="nav-item"><a href="/messages/new" class="nav-link">New Message</a></li>
+          <li class="nav-item"><a href="/users" class="nav-link">Users</a></li>
         </ul>
 
         <!-- Search -->
-        <form class="navbar-form navbar-right">
+        <form class="form-inline navbar-right">
           <div class="form-group">
-            <input type="text" class="form-control" value="bob" placeholder="Search for a user...">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search for a user..." aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
           </div>
-          <button type="submit" class="btn btn-default">Search</button>
         </form>
+
+        <!-- Account links -->
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item"><a href="/messages/new" class="nav-link">My Profile</a></li>
+          <li class="nav-item"><a href="/users" class="nav-link">Sign Out</a></li>
+        </ul>
       </div>
     </nav>
 
     <!-- Main content -->
     <div class="container">
       <div class="row">
-        <div class="page-header">
+        <div class="page-header col-md-12">
           <h1>Search Results <small>"bob"</small></h1>
         </div>
-
-        <!-- User -->
-        <div class="row user item">
-          <div class="col-md-1">
-            <div class="avatar-container-sm panel">
-              <img
-                 src="https://scontent.fbos1-1.fna.fbcdn.net/v/t1.0-9/15826366_101700313671229_2744231448357820426_n.jpg?oh=5bd13aac38626db11c019842e88c6f9b&oe=5A5CC1AB"
-                 alt="avatar"/>
-            </div>
-          </div>
-
-          <div class="col-md-11 content">
-            <div class="row">
-              <a href="/users/bob" class="name">
-                <strong>Bob Loblaw's Law Blog</strong> @bob
-              </a>
-            </div>
-
-            <div class="row">
-              <ul class="user-data user-data-lg">
-                <li><a href="/users/bob/followers">100 Followers</a></li>
-                <li><a href="/users/bob/following">101 Following</a></li>
-                <li>
-                  <form action="/users/bob/followers" method="POST">
-                    <input type="submit" value="Follow" class ="btn btn-default">
-                  </form>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- End user -->
-
-        <!-- User -->
-        <div class="row user item">
-          <div class="col-md-1">
-            <div class="avatar-container-sm panel">
-              <img
-              src="http://www.billboard.com/files/media/bob-dylan-smile-1965-billboard-1548.jpg"
-              alt="avatar"/>
-            </div>
-          </div>
-
-          <div class="col-md-11 content">
-            <div class="row">
-              <a href="/users/bobdylan" class="name">
-                <strong>Bob Dylan</strong> @bobdylan
-              </a>
-            </div>
-
-            <div class="row">
-              <ul class="user-data user-data-lg">
-                <li><a href="/users/bobdylan/followers">1,000,000 Followers</a></li>
-                <li><a href="/users/bobdylan/following">10 Following</a></li>
-                <li>
-                  <form action="/users/bobdylan/followers" method="POST">
-                    <input type="submit" value="Follow" class ="btn btn-default">
-                  </form>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- End user -->
-
-        <!-- User -->
-        <div class="row user item">
-          <div class="col-md-1">
-            <div class="avatar-container-sm panel">
-              <img
-                 src="https://pmcdeadline2.files.wordpress.com/2017/03/bobby-moynihan-2.jpg?w=605"
-                 alt="avatar"/>
-            </div>
-          </div>
-
-          <div class="col-md-11 content">
-            <div class="row">
-              <a href="/users/bobby" class="name">
-                <strong>Bobby Moynihan</strong> @bobby
-              </a>
-            </div>
-
-            <div class="row">
-              <ul class="user-data user-data-lg">
-                <li><a href="/users/bobby/followers">100,000 Followers</a></li>
-                <li><a href="/users/bobby/following">99 Following</a></li>
-                <li>
-                  <form action="/users/bobby/followers" method="POST">
-                    <input type="submit" value="Follow" class ="btn btn-default">
-                  </form>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- End user -->
-
-        <!-- User -->
-        <div class="row user item">
-          <div class="col-md-1">
-            <div class="avatar-container-sm panel">
-              <img
-              src="https://static-cdn.jtvnw.net/jtv_user_pictures/bobross-profile_image-0b9dd167a9bb16b5-300x300.jpeg"
-              alt="avatar"/>
-            </div>
-          </div>
-
-          <div class="col-md-11 content">
-            <div class="row">
-              <a href="/users/bob_ross" class="name">
-                <strong>Bob Ross</strong> @bob_ross
-              </a>
-            </div>
-
-            <div class="row">
-              <ul class="user-data user-data-lg">
-                <li><a href="/users/bob_ross/followers">75,000 Followers</a></li>
-                <li><a href="/users/bob_ross/following">178 Following</a></li>
-                <li>
-                  <form action="/users/bob_ross/followers" method="POST">
-                    <input type="submit" value="Follow" class ="btn btn-default">
-                  </form>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- End user -->
-
       </div>
+
+      <!-- User -->
+      <div class="row user item">
+        <div class="col-md-1">
+          <div class="avatar-container-sm panel">
+            <img
+                src="https://scontent.fbos1-1.fna.fbcdn.net/v/t1.0-9/15826366_101700313671229_2744231448357820426_n.jpg?oh=5bd13aac38626db11c019842e88c6f9b&oe=5A5CC1AB"
+                alt="avatar"/>
+          </div>
+        </div>
+
+        <div class="col-md-11 content">
+          <div class="row">
+            <a href="/users/bob" class="name">
+              <strong>Bob Loblaw's Law Blog</strong> @bob
+            </a>
+          </div>
+
+          <div class="row">
+            <ul class="user-data user-data-lg">
+              <li><a href="/users/bob/followers">100 Followers</a></li>
+              <li><a href="/users/bob/following">101 Following</a></li>
+              <li>
+                <form action="/users/bob/followers" method="POST">
+                  <input type="submit" value="Follow" class ="btn btn-outline-secondary">
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- End user -->
+
+      <!-- User -->
+      <div class="row user item">
+        <div class="col-md-1">
+          <div class="avatar-container-sm panel">
+            <img
+            src="http://www.billboard.com/files/media/bob-dylan-smile-1965-billboard-1548.jpg"
+            alt="avatar"/>
+          </div>
+        </div>
+
+        <div class="col-md-11 content">
+          <div class="row">
+            <a href="/users/bobdylan" class="name">
+              <strong>Bob Dylan</strong> @bobdylan
+            </a>
+          </div>
+
+          <div class="row">
+            <ul class="user-data user-data-lg">
+              <li><a href="/users/bobdylan/followers">1,000,000 Followers</a></li>
+              <li><a href="/users/bobdylan/following">10 Following</a></li>
+              <li>
+                <form action="/users/bobdylan/followers" method="POST">
+                  <input type="submit" value="Follow" class ="btn btn-outline-secondary">
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- End user -->
+
+      <!-- User -->
+      <div class="row user item">
+        <div class="col-md-1">
+          <div class="avatar-container-sm panel">
+            <img
+                src="https://pmcdeadline2.files.wordpress.com/2017/03/bobby-moynihan-2.jpg?w=605"
+                alt="avatar"/>
+          </div>
+        </div>
+
+        <div class="col-md-11 content">
+          <div class="row">
+            <a href="/users/bobby" class="name">
+              <strong>Bobby Moynihan</strong> @bobby
+            </a>
+          </div>
+
+          <div class="row">
+            <ul class="user-data user-data-lg">
+              <li><a href="/users/bobby/followers">100,000 Followers</a></li>
+              <li><a href="/users/bobby/following">99 Following</a></li>
+              <li>
+                <form action="/users/bobby/followers" method="POST">
+                  <input type="submit" value="Follow" class ="btn btn-outline-secondary">
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- End user -->
+
+      <!-- User -->
+      <div class="row user item">
+        <div class="col-md-1">
+          <div class="avatar-container-sm panel">
+            <img
+            src="https://static-cdn.jtvnw.net/jtv_user_pictures/bobross-profile_image-0b9dd167a9bb16b5-300x300.jpeg"
+            alt="avatar"/>
+          </div>
+        </div>
+
+        <div class="col-md-11 content">
+          <div class="row">
+            <a href="/users/bob_ross" class="name">
+              <strong>Bob Ross</strong> @bob_ross
+            </a>
+          </div>
+
+          <div class="row">
+            <ul class="user-data user-data-lg">
+              <li><a href="/users/bob_ross/followers">75,000 Followers</a></li>
+              <li><a href="/users/bob_ross/following">178 Following</a></li>
+              <li>
+                <form action="/users/bob_ross/followers" method="POST">
+                  <input type="submit" value="Follow" class ="btn btn-outline-secondary">
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- End user -->
+
     </div><!-- End main content -->
   </body>
 </html>

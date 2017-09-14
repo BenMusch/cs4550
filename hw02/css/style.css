@@ -1,9 +1,15 @@
-.sidebar {
-  padding: 2.5em 0 0 2.5em;
-}
-
 .navbar {
   margin-bottom: 1.5em;
+}
+
+.page-header {
+  margin-bottom: 1.5em;
+  border-bottom: 0.05em solid #eee;
+}
+
+.page-header small {
+  color: #777;
+  font-size: 0.6em;
 }
 
 /*********************
@@ -57,12 +63,9 @@
  ***************************
  */
 
-.user-data-lg {
-  padding: 0.3em;
-}
-
-.user-data-lg li {
-  margin-right: 1em;
+.card .btn-group a {
+  margin-top: 0.5em;
+  font-size: 0.9em;
 }
 
 /*********************
@@ -104,4 +107,13 @@
 
 .user .name {
   font-size: 1.2em;
+}
+
+/************************************
+ * Confusing fix for message-new form
+ ************************************
+ */
+
+.new-msg {
+  width: 100%;
 }
