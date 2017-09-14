@@ -1,0 +1,4 @@
+#! /bin/bash
+
+sshpass -p '$PASSWORD' ssh -t -o StrictHostKeyChecking=no ben@$SERVER_IP \
+  'cd /home/ben/www/cs4550; git stash; git pull origin master'
